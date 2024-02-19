@@ -7,7 +7,7 @@ export const Signup = ({setRegistered}) => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [username, setUsername] = useState('');
-  const apiUrl = "http://localhost:8080/user/register"
+  const apiUrl = "https://dataneuron-backend-8628.onrender.com/user/register"
 
 
   const formData = {
