@@ -26,9 +26,9 @@ const TeamMemberForm = () => {
     console.log(formData);
 
     try {
-      let url = "http://localhost:8080/team/submit";
+      let url = "https://dataneuron-backend-8628.onrender.com/team/submit";
      if(updateTeamMember){
-        url = "http://localhost:8080/team/update";
+        url = "https://dataneuron-backend-8628.onrender.com/team/update";
         let payload = {
           ...updateTeamMember,
           ...formData
@@ -57,7 +57,7 @@ const TeamMemberForm = () => {
       })
      }
       // console.log("Success:", response.data);
-      const responsedata = await fetch('http://localhost:8080/team/getTeamMember');
+      const responsedata = await fetch('https://dataneuron-backend-8628.onrender.com/team/getTeamMember');
       const data = await responsedata.json();
       setTeamMembers(data.teamMembers);
       setApiCountData(data.count);
