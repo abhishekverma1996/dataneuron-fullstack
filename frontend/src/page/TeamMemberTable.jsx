@@ -17,7 +17,7 @@ const TeamMemberTable = () => {
 
   const fetchData = async () => {
     try {
-      const response = await fetch('https://dataneuron-nuwp.onrender.com/team/getTeamMember');
+      const response = await fetch('https://dataneuron-backend-8628.onrender.com/team/getTeamMember');
       const data = await response.json();
       setTeamMembers(data.teamMembers);
       setApiCountData(data.count);
