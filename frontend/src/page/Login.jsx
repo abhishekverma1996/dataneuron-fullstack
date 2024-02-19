@@ -9,7 +9,7 @@ export const Login = ({ setRegistered }) => {
   const [password, setPassword] = useState("");
   const [isLoginSuccess, setIsLoginSuccess] = useState(false); // Track login success
 
-  const apiUrl = "http://localhost:8080/user/login";
+  const apiUrl = "https://dataneuron-backend-8628.onrender.com/user/login";
 
   const formData = {
     email,
